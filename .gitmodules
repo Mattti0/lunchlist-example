@@ -1,0 +1,3 @@
+[submodule "restaurants"]
+	path = restaurants
+	url = git@github.com:Mattti0/lunchlists-to-pythonlist.git
