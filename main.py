@@ -14,7 +14,4 @@ restaurants.importRestaurantPlugins(restaurantsconfig.get("restaurants"))
 for restaurant in restaurants.getAllRestaurants():
     print(f"{restaurants.getNameForRestaurant(restaurant)}")
     for item in restaurants.getListForRestaurant(restaurant):
-        try:
-            print(f"{  item}")
-        except KeyError:
-            pass
+        print(f"  {item}".replace("\\t", "  "))
